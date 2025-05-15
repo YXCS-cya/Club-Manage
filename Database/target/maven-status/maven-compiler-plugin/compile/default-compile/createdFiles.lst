@@ -1,0 +1,8 @@
+org\example\sqlserver\insert.class
+org\example\sqlserver\select.class
+org\example\sqlserver\delete.class
+org\example\sqlserver\update.class
+org\example\DatabaseManage\UserService.class
+org\example\DatabaseManage\ClubService.class
+org\example\sqlserver\DatabaseHelper.class
+org\example\DatabaseManage\MemberService.class

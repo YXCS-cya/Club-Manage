@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DataBaseAssign_Maven:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DataBaseAssign_Maven_jar</output-path>
+    <root id="archive" name="DataBaseAssign_Maven.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Database" />
+      <element id="module-output" name="UI" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-core-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Database/lib/sqljdbc42.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/xml/bind/jaxb-api/2.3.0/jaxb-api-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/activation/activation/1.1.1/activation-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/toedter/jcalendar/1.4/jcalendar-1.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

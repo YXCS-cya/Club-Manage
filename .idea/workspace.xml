@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="DataBaseAssign_Maven:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e3c39bb-5c30-4c88-abf6-bf48d2e2eb18" name="更改" comment="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成&#10;&#10;根据社团管理学生信息完成&#10;&#10;所有系统完成&#10;&#10;test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/UI/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI/src/main/java/org/example/Club/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/Database/lib/sqljdbc42.jar!/com/microsoft/sqlserver/jdbc/SQLServerException.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2qqXB3hrGmqEWPLE6i4sC5dYVkG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.DataBaseAssign_Maven [clean].executor": "Run",
+    "Maven.DataBaseAssign_Maven [package].executor": "Run",
+    "Maven.UI [clean].executor": "Run",
+    "Maven.UI [install].executor": "Run",
+    "Maven.UI [test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/YXCS/Desktop/作业/大三上/数据库/社团管理程序-数据库课设/DataBaseAssign_Maven",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "工件",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.App.executor": "Run",
+    "应用程序.ClubInfoApp.executor": "Run",
+    "应用程序.ClubInfoManager.executor": "Run",
+    "应用程序.ClubService.executor": "Run",
+    "应用程序.IdentityCheckWindow.executor": "Run",
+    "应用程序.PermissionManagementApp.executor": "Run",
+    "应用程序.ReportWindow.executor": "Run",
+    "应用程序.UserPermissionManagement.executor": "Run",
+    "应用程序.insert.executor": "Run",
+    "应用程序.org.example.Club.App.executor": "Run",
+    "应用程序.select.executor": "Run"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\YXCS\Desktop\作业\大三上\社团管理程序-数据库课设\DataBaseAssign_Maven\UI\src" />
+      <recent name="C:\Users\YXCS\Desktop\作业\大三上\社团管理程序-数据库课设\DataBaseAssign_Maven\Database" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\YXCS\Desktop\作业\大三上\社团管理程序-数据库课设\DataBaseAssign_Maven\Database\src\main\java\org\example" />
+      <recent name="C:\Users\YXCS\Desktop\作业\大三上\社团管理程序-数据库课设\DataBaseAssign_Maven\UI\src\main\java\org\example" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="UI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Member.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="UI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PermissionManagementApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.UserWindow.PermissionManagementApp" />
+      <module name="UI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.UserWindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserPermissionManagement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.UserWindow.UserPermissionManagement" />
+      <module name="UI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.UserWindow.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="select" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.sqlserver.select" />
+      <module name="Database" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.sqlserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.App" />
+        <item itemvalue="应用程序.UserPermissionManagement" />
+        <item itemvalue="应用程序.PermissionManagementApp" />
+        <item itemvalue="应用程序.select" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="7e3c39bb-5c30-4c88-abf6-bf48d2e2eb18" name="更改" comment="" />
+      <created>1735390941407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735390941407</updated>
+      <workItem from="1746538881024" duration="764000" />
+    </task>
+    <task id="LOCAL-00001" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成">
+      <option name="closed" value="true" />
+      <created>1735407066290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735407066290</updated>
+    </task>
+    <task id="LOCAL-00002" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成">
+      <option name="closed" value="true" />
+      <created>1735469473473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735469473473</updated>
+    </task>
+    <task id="LOCAL-00003" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功">
+      <option name="closed" value="true" />
+      <created>1735482888160</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735482888160</updated>
+    </task>
+    <task id="LOCAL-00004" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库成功">
+      <option name="closed" value="true" />
+      <created>1735488772883</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735488772883</updated>
+    </task>
+    <task id="LOCAL-00005" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现">
+      <option name="closed" value="true" />
+      <created>1735492708942</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735492708942</updated>
+    </task>
+    <task id="LOCAL-00006" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现">
+      <option name="closed" value="true" />
+      <created>1735494222948</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735494222948</updated>
+    </task>
+    <task id="LOCAL-00007" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表">
+      <option name="closed" value="true" />
+      <created>1735519247553</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735519247553</updated>
+    </task>
+    <task id="LOCAL-00008" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成">
+      <option name="closed" value="true" />
+      <created>1735743462093</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735743462093</updated>
+    </task>
+    <task id="LOCAL-00009" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成&#10;&#10;根据社团管理学生信息完成">
+      <option name="closed" value="true" />
+      <created>1735754160433</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735754160433</updated>
+    </task>
+    <task id="LOCAL-00010" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成&#10;&#10;根据社团管理学生信息完成&#10;&#10;所有系统完成">
+      <option name="closed" value="true" />
+      <created>1735759160877</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735759160877</updated>
+    </task>
+    <task id="LOCAL-00011" summary="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成&#10;&#10;根据社团管理学生信息完成&#10;&#10;所有系统完成&#10;&#10;test">
+      <option name="closed" value="true" />
+      <created>1735841528071</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735841528071</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库成功" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成&#10;&#10;根据社团管理学生信息完成" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成&#10;&#10;根据社团管理学生信息完成&#10;&#10;所有系统完成" />
+    <MESSAGE value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成&#10;&#10;根据社团管理学生信息完成&#10;&#10;所有系统完成&#10;&#10;test" />
+    <option name="LAST_COMMIT_MESSAGE" value="连接数据库完成&#10;数据库初步设计完成&#10;数据库测试数据添加完成&#10;&#10;社团信息界面连接完成&#10;&#10;主窗口社团信息连接成功&#10;社团信息界面刷新按钮设置成功&#10;&#10;社员管理界面连接数据库&#10;&#10;新增社团功能实现&#10;&#10;删除社团功能实现&#10;&#10;视图查询活动报表&#10;&#10;用户权限审查、修改完成&#10;&#10;根据社团管理学生信息完成&#10;&#10;所有系统完成&#10;&#10;test" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((MainWindow)this).UserId" custom="org.example.MainWindow" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
