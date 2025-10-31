@@ -149,7 +149,7 @@ public void batchInsertMembers(List<Member> members) {
 
 ## ⚙️ How to Run
 1. Attach the database files:
-/Database/ClubManage.mdf and /Database/ClubManage.ldf in SQL Server Management Studio.
+/数据库文件/社团管理系统.mdf and /数据库文件/社团管理系统.ldf in SQL Server Management Studio.
 
 2. Update the connection configuration in DatabaseHelper.java.
 
