@@ -170,3 +170,8 @@ Some UI features (such as detailed logging and report exports) were not implemen
 
 For a full technical summary (in Chinese), including E-R diagrams and process explanations, see:
 🔗 https://www.cnblogs.com/YXCS-cya/p/18878598
+
+---
+## 🛠️ Build & Run Note
+This project can be compiled and executed directly from source using IntelliJ IDEA or any Java IDE.  
+No external libraries are required. The server should be launched before running the client.
