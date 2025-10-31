@@ -173,5 +173,5 @@ For a full technical summary (in Chinese), including E-R diagrams and process ex
 
 ---
 ## 🛠️ Build & Run Note
-This project can be compiled and executed directly from source using IntelliJ IDEA or any Java IDE.  
-No external libraries are required. The server should be launched before running the client.
+1. This project has been performed successfully with “SQL Server 2012”.
+2. Follow the steps in "⚙️ How to Run" which shows above.
