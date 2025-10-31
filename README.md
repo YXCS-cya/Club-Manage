@@ -2,16 +2,17 @@
 > A database-driven management system built with Java and SQL Server 2012
 
 ---
-
 ## 🧩 Project Overview
 This project was developed as part of a **Database Systems course**.  
-It aims to design and implement a complete management system for student clubs using **Java (JDBC)** and **SQL Server 2012**.  
-The system adheres to the **Third Normal Form (3NF)**, employs **Power Designer** for database modeling, and integrates advanced database features such as transactions, views, parameterized queries, and indexing.
+It aims to design and implement a management system for student clubs using **Java (JDBC)** and **SQL Server 2012**.
 
-- **Database**: SQL Server 2012  
-- **Modeling Tool**: Power Designer  
-- **Technologies**: Java (JDBC), SQL Views, Transactions, Index Optimization  
-- **Goal**: To build a practical, secure, and normalized database management system that demonstrates full-stack data handling and system design ability.
+The system follows **Third Normal Form (3NF)** principles, modeled via **Power Designer**, and integrates:
+- **SQL Views** for modular data access  
+- **Transactions** for integrity control  
+- **Parameterized Queries** for security  
+- **Index Optimization** for performance  
+
+**Goal:** To build a practical, secure, and normalized database management system demonstrating full-stack data handling and design ability.
 
 ---
 
