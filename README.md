@@ -1,50 +1,171 @@
-# Club-Manage
-## 社团管理系统-MSSQL
-### 项目结构说明：https://www.cnblogs.com/YXCS-cya/p/18878598
-> 本项目作数据库学习使用
-> 
-> 由于初始设计并非Maven架构，导致打包过程中出现冲突。须本地化源码后使用
+# Club Management System (Club-Manage)
+> A database-driven management system built with Java and SQL Server 2012
+
 ---
-## 界面示例
-![image](https://github.com/user-attachments/assets/54bd6ae0-21ff-491b-9b7b-573a7c49c973)
-![image](https://github.com/user-attachments/assets/fdfdf2ef-85f1-41cd-8dcc-ffb30dbded60)
-![image](https://github.com/user-attachments/assets/01cec108-fe13-4ab6-bfb2-04933fa10afa)
-> 权限不足情况
 
-![image](https://github.com/user-attachments/assets/bd4e293f-c9a6-422c-911c-c9e1932bbce2)
+## 🧩 Project Overview
+This project was developed as part of a **Database Systems course**.  
+It aims to design and implement a complete management system for student clubs using **Java (JDBC)** and **SQL Server 2012**.  
+The system adheres to the **Third Normal Form (3NF)**, employs **Power Designer** for database modeling, and integrates advanced database features such as transactions, views, parameterized queries, and indexing.
 
-## 使用说明
-本程序需要使用相应的社团管理系统数据库，请通过文件夹中的“社团管理系统.mdf”和“.ldf”文件将数据库附加在本地（Sql Server2012）。
-> 参考流程可见网页：https://blog.csdn.net/gengkui9897/article/details/89321844。
+- **Database**: SQL Server 2012  
+- **Modeling Tool**: Power Designer  
+- **Technologies**: Java (JDBC), SQL Views, Transactions, Index Optimization  
+- **Goal**: To build a practical, secure, and normalized database management system that demonstrates full-stack data handling and system design ability.
 
-具体使用说明如下：
-1. 主界面/社团信息界面
-
-- 通过建立视图查询“Club”表及“Member”表的信息。
-
-2. 社团信息管理界面
-> 包含增删改查、复杂查询、级联删除和视图。
-
-- 单击左侧列表，可在中心查看对应社团信息——通过复杂查询读取数据库中的数据。
-- 社员管理按钮：请单击列表选择一个社团，再点击该按钮。系统会显示该社团的成员信息（“SCHOOL”没有成员）。通过建立视图，可以快捷查询“Club”表、“Member”表和“Club_Member”表的信息。使用级联删除，避免社团信息中还残留成员信息。通过视图方便对复杂查询的信息筛选。
-- 社团信息修改按钮：请单击列表选择一个社团，再点击该按钮。显示该社团的当前信息后，可以直接在文本框中修改。
-- 删除社团按钮：单击列表选择一个社团，再点击该按钮。显示该社团的当前信息后，确认是否删除。
-上述操作点击确定后，请点击社团信息管理界面的刷新按钮，系统会将数据库更新后的信息重新加载到该界面。
-
-3. 活动报表界面
-> 主要使用视图与模糊查询。
-  - 如果不输入查询关键字：查看所有已录入的信息——通过视图，调取“Club”、“Activity”和“ClubActivityRecord”三张表的信息。
-  - 输入查询信息：查看与关键字相关的社团举办的活动或包含该关键字的活动——使用模糊查询。
-
-4. 权限管理界面
-> 视图确保密码的安全性，设置用户身份保证操作的合法性。
-  - 登录：默认请使用管理员账户（用户名：“CYA”，密码：“1234”）进行登录，只有管理员才有资格修改信息。通过视图等操作，确保密码传输时的安全性（输入密码时，用户不可见）。
-  - 修改信息：只有管理员可以进行修改，其他用户无法打开修改页面。管理员用户只能修改身份（管理员、负责人、普通学生），修改时若有误会报错。整个过程中，密码对用户隐藏。
-
-本程序的主要操作如上，期间所有对数据的操作都会实时同步到数据库内。
 ---
-> 注：
-> 本系统仅用于实践对数据库系统的学习，因此部分同质化严重的操作未进行实现。如果需要测试数据，请在数据库管理系统（DBMS）中进行添加。
-> 
-> 另注：
-> 本系统基于Maven，同时借用JDBC连接至Sql Server2012，实现对数据库的管理
+
+## 📘 Database Design
+
+### 1. Design Principles
+- Fully compliant with the **Third Normal Form (3NF)**  
+- Database modeled with **Power Designer**  
+- Six main tables and two views designed for data normalization and referential integrity  
+
+### 2. Core Table Structures
+
+#### Club Table
+```sql
+CREATE TABLE Club (
+    Club_ID INT PRIMARY KEY,
+    Club_Name VARCHAR(255) NOT NULL,
+    Club_Type VARCHAR(100),
+    Club_ManagerID INT REFERENCES Member(Member_ID),
+    Club_Teacher VARCHAR(100),
+    Club_Number INT CHECK(Club_Number >= 0),
+    Club_Add VARCHAR(255)
+);
+```
+
+#### Many-to-Many Relationship Table (ClubMember)
+```sql
+CREATE TABLE ClubMember (
+    Club_ID INT REFERENCES Club(Club_ID),
+    Member_ID INT REFERENCES Member(Member_ID),
+    PRIMARY KEY (Club_ID, Member_ID)
+);
+```
+#### Optimized View Example
+```sql
+CREATE VIEW ClubactView AS
+SELECT c.Club_Name, a.Activity_Name, r.AttendanceCount 
+FROM Activity a
+JOIN Club c ON a.Club_ID = c.Club_ID
+LEFT JOIN ClubActivityRecord r ON a.Activity_ID = r.Activity_ID;
+
+```
+
+## 💻 System Implementation
+Full source code available at GitHub Repository
+
+### JDBC Connection Helper
+```java
+
+public class DatabaseHelper {
+    private static final String URL = "jdbc:sqlserver://localhost:1433;...";
+    
+    static {
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, "sa", "123456");
+    }
+}
+```
+### Transaction Template
+```java
+
+public void updateClubInfo(Club club) {
+    Connection conn = null;
+    try {
+        conn = DatabaseHelper.getConnection();
+        conn.setAutoCommit(false);
+        
+        updateBasicInfo(conn, club);
+        updateMemberCount(conn, club.getClub_ID());
+        
+        conn.commit();
+    } catch (SQLException e) {
+        if(conn != null) try { conn.rollback(); } catch (SQLException ex) {}
+    } finally {
+        if(conn != null) try { conn.close(); } catch (SQLException e) {}
+    }
+}
+```
+## 🔐 Security and Optimization
+### 1. Security Controls
+- View Encapsulation: Restricts data access using ClubLeaderView to protect sensitive fields.
+
+- Parameterized Queries: Prevent SQL injection through prepared statements.
+
+```java
+
+PreparedStatement ps = conn.prepareStatement(
+    "SELECT * FROM Member WHERE Member_Name LIKE ?"
+);
+ps.setString(1, "%" + keyword + "%");
+```
+### 2. Performance Optimization
+- Indexing Strategy: Added indexes on foreign key fields (Club_ID, Member_ID) to improve query efficiency.
+
+- Batch Processing: Used JDBC batch operations to speed up large-scale data import.
+
+```java
+
+public void batchInsertMembers(List<Member> members) {
+    try (Connection conn = DatabaseHelper.getConnection();
+         PreparedStatement ps = conn.prepareStatement(
+             "INSERT INTO Member VALUES (?,?,?,?,?)")) {
+        
+        for (Member m : members) {
+            ps.setInt(1, m.getId());
+            ps.setString(2, m.getName());
+            ps.addBatch();
+        }
+        ps.executeBatch();
+    }
+}
+```
+## 🧠 System Features
+| Module                         | Description                                                                    |
+| ------------------------------ | ------------------------------------------------------------------------------ |
+| **Login & Permission Control** | Role-based authentication for admins, leaders, and regular members.            |
+| **Club Management**            | View, update, and delete club information with cascading relationships.        |
+| **Member Management**          | Manage many-to-many mappings between clubs and members.                        |
+| **Activity Reports**           | Generate reports via SQL views and fuzzy search queries.                       |
+| **Data Security**              | All operations use transactions and parameterized queries to ensure integrity. |
+
+
+## 🪟 Interface Previews
+<img width="1380" height="1040" alt="image" src="https://github.com/user-attachments/assets/4e4c592f-41f4-447b-8964-561424be051a" />
+<img width="1058" height="464" alt="image" src="https://github.com/user-attachments/assets/9d616898-b2de-4d9b-ba2d-d8af0755a805" />
+<img width="606" height="266" alt="image" src="https://github.com/user-attachments/assets/3a1676ea-62d6-4b70-baa3-328a96f1c87d" />
+
+
+## ⚙️ How to Run
+1. Attach the database files:
+/Database/ClubManage.mdf and /Database/ClubManage.ldf in SQL Server Management Studio.
+
+2. Update the connection configuration in DatabaseHelper.java.
+
+3. Run the main program to start the application.
+
+4. Default administrator account:
+
+- Username: CYA
+- Password: 1234
+
+> All operations are executed in real time and synchronized with the SQL Server database.
+
+
+## 🧾 Notes & Acknowledgements
+This system was developed for academic purposes and focuses on database design, transaction control, and secure data access.
+Some UI features (such as detailed logging and report exports) were not implemented due to course time constraints.
+
+For a full technical summary (in Chinese), including E-R diagrams and process explanations, see:
+🔗 https://www.cnblogs.com/YXCS-cya/p/18878598
